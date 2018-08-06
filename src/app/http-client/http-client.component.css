@@ -1,0 +1,14 @@
+.dataList .dataRow {
+    border-bottom: 1px solid #ced4da;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dataList {
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+}

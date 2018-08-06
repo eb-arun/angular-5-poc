@@ -1,0 +1,33 @@
+<h1>HttpClient</h1>
+<p>HttpClient in @angular/common as a smaller, easier, and more powerful way to make web requests in Angular. The new HttpClient
+  has gotten some great praise from developers, so we’re now recommending HttpClient for all applications, and deprecating
+  the previous @angular/http library.</p>
+<p>To update to HttpClient, you’ll need to replace HttpModule with <strong>HttpClientModule</strong> from @angular/common/http
+  in each of your modules, inject the HttpClient service, and remove any <strong>map(res => res.json())</strong> calls, which
+  are no longer needed.</p>
+<h4>Example Summary:</h4>
+<p>Below list of details(Working Example) fetched from one of the github issue page public service call.</p>
+<p>Service Call: <code>https://api.github.com/repos/facebook/react/issues</code> </p>
+
+<h4>Working Example:</h4>
+<p class="text-right"><a href="https://github.com/facebook/react/issues" target="_blank">Source Page</a></p>
+<div class="row">
+  <div class="col-sm">
+    <ul class="dataList">
+      <li class="row dataRow" *ngFor="let data of totalIssues let i = index">
+        <div class="float-left pt-2 dataIcon ml-3">
+          {{i+1}}.
+        </div>
+        <div class="float-left col-7 col-sm-9 col-md-8 col-lg-9 lh-condensed p-2 dataTitle">
+          <strong> {{data.title}}</strong>
+          <br>
+          <span>#{{data.number}} opened {{data.created_at}} by {{data.user.login}}</span>
+          <span *ngFor="let labels of data.labels"><span class="badge badge-success ml-3" style.background="#{{labels.color}}">{{labels.name}}</span></span>
+        </div>
+        <div *ngIf="data.comments!=0" class="text-right col-3 col-sm-2 mt-3 dataMessage">
+          <i class="far fa-comment-alt"></i> {{data.comments}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
