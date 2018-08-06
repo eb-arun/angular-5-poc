@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AngularVPoc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# angular-5-poc
+Angular v5 - Proof of Concept [poc]
+>>>>>>> 5acf9f0d7b9ff7a0a063a9c93d3ac20a7702fc0d
