@@ -6,11 +6,11 @@
   in each of your modules, inject the HttpClient service, and remove any <strong>map(res => res.json())</strong> calls, which
   are no longer needed.</p>
 <h4>Example Summary:</h4>
-<p>Below list of details(Working Example) fetched from one of the github issue page public service call.</p>
-<p>Service Call: <code>https://api.github.com/repos/facebook/react/issues</code> </p>
+<p>Below list of details(Working Example) fetched from one of the github Angular issues page public service call.</p>
+<p>Service Call: <code>https://api.github.com/repos/angular/angular/issues</code> </p>
 
 <h4>Working Example:</h4>
-<p class="text-right"><a href="https://github.com/facebook/react/issues" target="_blank">Source Page</a></p>
+<p class="text-right"><a href="https://github.com/angular/angular/issues" target="_blank">Source Page</a></p>
 <div class="row">
   <div class="col-sm">
     <ul class="dataList">
@@ -21,7 +21,7 @@
         <div class="float-left col-7 col-sm-9 col-md-8 col-lg-9 lh-condensed p-2 dataTitle">
           <strong> {{data.title}}</strong>
           <br>
-          <span>#{{data.number}} opened {{data.created_at}} by {{data.user.login}}</span>
+          <span>#{{data.number}} opened {{data.created_at | date}} by {{data.user.login}}</span>
           <span *ngFor="let labels of data.labels"><span class="badge badge-success ml-3" style.background="#{{labels.color}}">{{labels.name}}</span></span>
         </div>
         <div *ngIf="data.comments!=0" class="text-right col-3 col-sm-2 mt-3 dataMessage">
