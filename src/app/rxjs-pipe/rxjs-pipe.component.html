@@ -1,0 +1,11 @@
+<h1>RxJS 5.5</h1>
+<p>We’ve updated our use of RxJS to 5.5.2 or later. This recent release of RxJS fully empowers developers to avoid the side effects of the previous import mechanism with a new way of using RxJS called “lettable operators”. These new operators eliminate the side effects and the code splitting / tree shaking problems that existed with the previous ‘patch’ method of importing operators.</p>
+<h4>Example</h4>
+<code><pre>
+  import {{ '{' }} Observable {{ '}' }} from 'rxjs/Observable';
+  import {{ '{' }} map, filter {{ '}' }} from 'rxjs/operators';
+  names = allUserData.pipe(
+    map(user => user.name),
+    filter(name => name),
+  );
+</pre></code>

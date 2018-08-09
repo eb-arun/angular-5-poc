@@ -10,11 +10,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { AboutComponent } from './about/about.component';
+import { RxjsPipeComponent } from './rxjs-pipe/rxjs-pipe.component';
 
 export const router: Routes = [
   { path: '', component: HomeComponent },
   { path: 'route-events', component: RouteFeatureComponent },
   { path: 'http-client', component: HttpClientComponent },
+  { path: 'rxjs-pipe', component: RxjsPipeComponent },
   { path: 'about', component: AboutComponent }
 
 ];
@@ -25,7 +27,8 @@ export const router: Routes = [
     RouteFeatureComponent,
     HomeComponent,
     HttpClientComponent,
-    AboutComponent
+    AboutComponent,
+    RxjsPipeComponent
   ],
   imports: [
     BrowserModule,
