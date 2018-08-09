@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-# AngularVPoc
+# Angular V Poc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4300/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -29,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # angular-5-poc
 Angular v5 - Proof of Concept [poc]
->>>>>>> 5acf9f0d7b9ff7a0a063a9c93d3ac20a7702fc0d
+You can able to understand the Angular 5 features with working examples
